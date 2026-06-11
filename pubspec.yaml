@@ -1,0 +1,57 @@
+name: flutter_starter
+description: Магазин техники
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  # База данных PostgreSQL
+  postgres: ^2.6.2
+  # Хранение токенов и данных пользователя
+  shared_preferences: ^2.2.2
+  # HTTP запросы (если нужен API)
+  http: ^1.1.0
+  # Управление состоянием
+  provider: ^6.1.1
+  # Безопасное хранение паролей
+  crypto: ^3.0.3
+  # Выбор изображений
+  image_picker: ^1.0.7
+  # Анимации
+  animate_do: ^3.3.4
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+  flutter_animate: ^4.5.0
+  # Интерактивные карточки
+  flutter_slidable: ^4.0.3
+  # WebSocket для real-time чата
+  web_socket_channel: ^2.4.0
+  # Звонки и открытие URL
+  url_launcher: ^6.2.5
+  # Уведомления
+  flutter_local_notifications: ^17.0.0
+  # Маска для ввода телефона
+  mask_text_input_formatter: ^2.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+# Конфигурация иконки приложения
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#0A0A0A"
+  adaptive_icon_foreground: "assets/icon/app_icon_fg.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
